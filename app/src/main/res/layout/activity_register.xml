@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".registerActivity">
+    <EditText
+        android:id="@+id/signupUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/edittext_border"
+        android:drawableLeft="@drawable/person1"
+        android:ems="10"
+        android:hint="שם"
+        android:inputType="text"
+        android:padding="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/signupEmail"
+        app:layout_constraintStart_toStartOf="@+id/signupEmail"
+        app:layout_constraintTop_toBottomOf="@+id/logoBookit" />
+
+    <EditText
+        android:id="@+id/signupPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/edittext_border"
+        android:drawableLeft="@drawable/passwordicon"
+        android:ems="10"
+        android:hint="סיסמה"
+        android:inputType="text"
+        android:padding="8dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signupnickname" />
+
+    <Button
+        android:id="@+id/signupButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="232dp"
+        android:ems="10"
+        android:text="הרשם"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoBookit" />
+
+    <TextView
+        android:id="@+id/logoBookit"
+        android:layout_width="112dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/logo"
+        app:layout_constraintEnd_toEndOf="@+id/Bookit"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/Bookit"
+        app:layout_constraintTop_toBottomOf="@+id/Bookit" />
+
+    <TextView
+        android:id="@+id/Bookit"
+        android:layout_width="297dp"
+        android:layout_height="255dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/open"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="@+id/signupButton"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@+id/signupButton"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/signupEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:background="@drawable/edittext_border"
+        android:drawableLeft="@drawable/baseline_attach_email_24"
+        android:ems="10"
+        android:hint="איימיל"
+        android:inputType="textEmailAddress"
+
+        android:padding="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/signupnickname"
+        app:layout_constraintStart_toStartOf="@+id/signupnickname"
+        app:layout_constraintTop_toBottomOf="@+id/logoBookit" />
+
+    <EditText
+        android:id="@+id/signupnickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="108dp"
+        android:background="@drawable/edittext_border"
+        android:drawableLeft="@drawable/iconname1"
+        android:ems="10"
+        android:hint="שם משתמש"
+        android:inputType="text"
+
+        android:padding="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/signupPassword"
+        app:layout_constraintStart_toStartOf="@+id/signupPassword"
+        app:layout_constraintTop_toBottomOf="@+id/logoBookit" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="יש לך כבר משתמש? התחבר"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signupButton"
+        app:layout_constraintVertical_bias="0.362" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
